@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nejhranější počítačové</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial;
+        }
+
+        body {
+            background-image: url("https://images8.alphacoders.com/441/441849.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .overlay {
+            background-color: rgba(0,0,0,0.75);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            background-color: rgba(0,0,0,0.85);
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px 14px;
+        }
+
+        th {
+            background-color: rgba(80,80,80,0.8);
+        }
+
+        a {
+            color: #00ffff;
+            cursor: pointer;
+        }
+
+        #info {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: rgba(0,0,0,0.9);
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid white;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <h1>Nejhranější počítačové hry (2004–2025)</h1>
+
+        <table>
+            <tr><th>Rok</th><th>Hra</th></tr>
+
+            <tr><td>2004</td><td><a onclick="zobrazHru('GTA San Andreas')">GTA San Andreas</a></td></tr>
+            <tr><td>2005</td><td><a onclick="zobrazHru('World of Warcraft')">World of Warcraft</a></td></tr>
+            <tr><td>2006</td><td><a onclick="zobrazHru('The Elder Scrolls IV: Oblivion')">The Elder Scrolls IV: Oblivion</a></td></tr>
+            <tr><td>2007</td><td><a onclick="zobrazHru('Call of Duty 4: Modern Warfare')">Call of Duty 4: Modern Warfare</a></td></tr>
+            <tr><td>2008</td><td><a onclick="zobrazHru('League of Legends')">League of Legends</a></td></tr>
+            <tr><td>2009</td><td><a onclick="zobrazHru('Minecraft')">Minecraft</a></td></tr>
+            <tr><td>2010</td><td><a onclick="zobrazHru('StarCraft II')">StarCraft II</a></td></tr>
+            <tr><td>2011</td><td><a onclick="zobrazHru('The Elder Scrolls V: Skyrim')">The Elder Scrolls V: Skyrim</a></td></tr>
+            <tr><td>2012</td><td><a onclick="zobrazHru('Diablo III')">Diablo III</a></td></tr>
+            <tr><td>2013</td><td><a onclick="zobrazHru('Grand Theft Auto V')">Grand Theft Auto V</a></td></tr>
+            <tr><td>2014</td><td><a onclick="zobrazHru('Dota 2')">Dota 2</a></td></tr>
+            <tr><td>2015</td><td><a onclick="zobrazHru('The Witcher 3: Wild Hunt')">The Witcher 3: Wild Hunt</a></td></tr>
+            <tr><td>2016</td><td><a onclick="zobrazHru('Overwatch')">Overwatch</a></td></tr>
+            <tr><td>2017</td><td><a onclick="zobrazHru('PUBG: Battlegrounds')">PUBG</a></td></tr>
+            <tr><td>2018</td><td><a onclick="zobrazHru('Fortnite')">Fortnite</a></td></tr>
+            <tr><td>2019</td><td><a onclick="zobrazHru('Apex Legends')">Apex Legends</a></td></tr>
+            <tr><td>2020</td><td><a onclick="zobrazHru('Among Us')">Among Us</a></td></tr>
+            <tr><td>2021</td><td><a onclick="zobrazHru('Valheim')">Valheim</a></td></tr>
+            <tr><td>2022</td><td><a onclick="zobrazHru('Elden Ring')">Elden Ring</a></td></tr>
+            <tr><td>2023</td><td><a onclick="zobrazHru('Hogwarts Legacy')">Hogwarts Legacy</a></td></tr>
+            <tr><td>2024</td><td><a onclick="zobrazHru('Helldivers 2')">Helldivers 2</a></td></tr>
+            <tr><td>2025</td><td><a onclick="zobrazHru('Baldur’s Gate 3')">Baldur’s Gate 3</a></td></tr>
+
+        </table>
+
+        <div id="info">
+            Klikni na název hry pro zobrazení informací.
+        </div>
+
+    </div>
+
+    <script>
+
+        function zobrazHru(hra) {
+
+            var obrazek = "";
+            var text = "";
+
+            if (hra == "GTA San Andreas") {
+                text = "Žánr: Akční / Open World<br>Rok vydání: 2004";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/c/c4/GTASABOX.jpg";
+            }
+
+            else if (hra == "World of Warcraft") {
+                text = "Žánr: MMORPG<br>Rok vydání: 2004";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png";
+            }
+
+            else if (hra == "The Elder Scrolls IV: Oblivion") {
+                text = "Žánr: RPG<br>Rok vydání: 2006";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/4/4b/The_Elder_Scrolls_IV_Oblivion_cover.png";
+            }
+
+            else if (hra == "Call of Duty 4: Modern Warfare") {
+                text = "Žánr: FPS<br>Rok vydání: 2007";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_4_Modern_Warfare.jpg";
+            }
+
+            else if (hra == "League of Legends") {
+                text = "Žánr: MOBA<br>Rok vydání: 2009";
+                obrazek = "https://i.pinimg.com/736x/20/54/b6/2054b617ac11f24e23d62e05f85303d4.jpg";
+            }
+
+            else if (hra == "Minecraft") {
+                text = "Žánr: Sandbox / Survival<br>Rok vydání: 2011";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/b/b6/Minecraft_2024_cover_art.png";
+            }
+
+            else if (hra == "StarCraft II") {
+                text = "Žánr: RTS<br>Rok vydání: 2010";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/2/20/StarCraft_II_-_Box_Art.jpg";
+            }
+
+            else if (hra == "The Elder Scrolls V: Skyrim") {
+                text = "Žánr: RPG<br>Rok vydání: 2011";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png";
+            }
+
+            else if (hra == "Diablo III") {
+                text = "Žánr: Action RPG<br>Rok vydání: 2012";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/8/80/Diablo_III_cover.png";
+            }
+
+            else if (hra == "Grand Theft Auto V") {
+                text = "Žánr: Akční / Open World<br>Rok vydání: 2013";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png";
+            }
+
+            else if (hra == "Dota 2") {
+                text = "Žánr: MOBA<br>Rok vydání: 2013";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg";
+            }
+
+            else if (hra == "The Witcher 3: Wild Hunt") {
+                text = "Žánr: RPG<br>Rok vydání: 2015";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg";
+            }
+
+            else if (hra == "Overwatch") {
+                text = "Žánr: FPS / Hero Shooter<br>Rok vydání: 2016";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/5/51/Overwatch_cover_art.jpg";
+            }
+
+            else if (hra == "PUBG: Battlegrounds") {
+                text = "Žánr: Battle Royale<br>Rok vydání: 2017";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/PlayerUnknown%27s_Battlegrounds_Mobile.webp/240px-PlayerUnknown%27s_Battlegrounds_Mobile.webp.png";
+            }
+
+            else if (hra == "Fortnite") {
+                text = "Žánr: Battle Royale<br>Rok vydání: 2017";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/a/ae/Fortnite_Save_The_World.jpg";
+            }
+
+            else if (hra == "Apex Legends") {
+                text = "Žánr: Battle Royale<br>Rok vydání: 2019";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg";
+            }
+
+            else if (hra == "Among Us") {
+                text = "Žánr: Multiplayer / Party<br>Rok vydání: 2018";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg";
+            }
+
+            else if (hra == "Valheim") {
+                text = "Žánr: Survival<br>Rok vydání: 2021";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/7/77/Valheim_2021_logo.jpg";
+            }
+
+            else if (hra == "Elden Ring") {
+                text = "Žánr: Action RPG<br>Rok vydání: 2022";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg";
+            }
+
+            else if (hra == "Hogwarts Legacy") {
+                text = "Žánr: RPG / Adventure<br>Rok vydání: 2023";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Hogwarts_legacyboxart.png/250px-Hogwarts_legacyboxart.png";
+            }
+
+            else if (hra == "Helldivers 2") {
+                text = "Žánr: Akční<br>Rok vydání: 2024";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/e/e7/Helldivers2cover.png";
+            }
+
+            else if (hra == "Baldur’s Gate 3") {
+                text = "Žánr: RPG<br>Rok vydání: 2023";
+                obrazek = "https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg";
+            }
+
+            document.getElementById("info").innerHTML =
+                "<h2>" + hra + "</h2><p>" + text + "</p><img src='" + obrazek + "'>";
+
+        }
+
+    </script>
+
+</body>
+</html>
